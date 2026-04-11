@@ -17,4 +17,4 @@ COPY package*.json ./
 RUN bun install
 
 COPY . .
-CMD ["bun", "start"]
+CMD ["sh", "-c", "bun start --port $PORT"]
